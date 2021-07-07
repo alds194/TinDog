@@ -1,27 +1,10 @@
 body {
-
     font-family: 'Montserrat', sans-serif;
+    text-align: center
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-    color: white;
-    text-align: left;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -41,6 +24,23 @@ p {
 #title {
     background-color: #ff4c68;
     color: #fff;
+    text-align: left;
+}
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: white;
+    text-align: left;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /* Navbar */
@@ -79,17 +79,22 @@ p {
     right: 25%;
 }
 
-/* Icons */
+/* Features */
 
 .row {
     padding: 7% 15%;
-    text-align: center;
 }
 
 #features {
-    padding: 7% 15%;
     background-color: white;
     position: relative;
+}
+
+.features-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 .features-icon {
@@ -100,13 +105,6 @@ p {
     color: #ff4c68;
 }
 
-.features {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-}
-
 .features-subtitle {
     color: #8f8f8f;
 }
@@ -114,9 +112,13 @@ p {
 /* Testimonials */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -127,7 +129,6 @@ p {
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -136,11 +137,12 @@ p {
     margin: 20px 20px 50px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /* Pricing */
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
 
 .card-body-1 {
     height: 286px;
@@ -154,8 +156,6 @@ p {
 
 #cta {
     background-color: #ff4c68;
-    text-align: center;
-    padding: 7% 15%;
 }
 
 .cta-text {
@@ -167,15 +167,20 @@ p {
 /* Footer */
 
 #footer {
-    text-align: center;
     padding: 7% 15%;
 }
 
 .footer-icon {
     margin: 20px 10px;
 }
-    
-h1 {
-    text-align: center;
-}
 
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-img {
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
+}
