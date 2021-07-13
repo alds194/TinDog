@@ -21,9 +21,16 @@ p {
     padding-bottom: 0;
 }
 
-#title {
+.colored-section {
     background-color: #ff4c68;
     color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+#title {
     text-align: left;
 }
 
@@ -90,11 +97,11 @@ p {
     position: relative;
 }
 
-.features-title {
+.feature-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
-    padding-top: 1rem;
+    margin-top: 10px;
 }
 
 .features-icon {
@@ -153,10 +160,6 @@ p {
 }
 
 /* Call to Action */
-
-#cta {
-    background-color: #ff4c68;
-}
 
 .cta-text {
     color: white;
